@@ -7,7 +7,7 @@ float distance = 0.0;
 
 void setup()
 {
-pinMode(echo_pin, INPUT);
+  pinMode(echo_pin, INPUT);
   pinMode(trig_pin, OUTPUT);
   pinMode(buzzer, OUTPUT);
   
@@ -24,6 +24,7 @@ void loop()
   
   digitalWrite(trig_pin, HIGH);
   delay(10);
+  
   digitalWrite(trig_pin, LOW);
   
   timing = pulseIn(echo_pin, HIGH);
