@@ -100,7 +100,7 @@ void putByte(byte data)
       digitalWrite(DIN_PIN, HIGH); 
     else
       digitalWrite(DIN_PIN, LOW);  
-    digitalWrite(CLK_PIN, HIGH);  
+    digitalWrite(CLK_PIN, HIGH);
     --i;                          
   }
 }
