@@ -3,7 +3,7 @@
 
 int ANIMDELAY = 100;  
 int INTENSITYMIN = 0; 
-int INTENSITYMAX = 8; 
+int INTENSITYMAX = 8;
 //Subcribe to the neo studios 
 //Pins
 //VCC -> VCC
