@@ -4,9 +4,9 @@
 #include <ESP8266WiFi.h>
 #include <NTPClient.h>
 #include <WiFiUdp.h>
-LiquidCrystal_I2C lcd(0x27, 16, 2);     // IF YOUR ADDRESS IS DIFFERENT, PUT THAT IN PLACE OF '0x27F'
+LiquidCrystal_I2C lcd(0x27, 16, 2);    // IF YOUR ADDRESS IS DIFFERENT, PUT THAT IN PLACE OF '0x27F'
 const char *ssid     = "";    
-const char *password = "";      
+const char *password = "";
 WiFiUDP ntpUDP;
 #define offset 19800              
 NTPClient timeClient(ntpUDP, "pool.ntp.org");
