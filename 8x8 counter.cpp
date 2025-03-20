@@ -1,4 +1,18 @@
+#include "LedControl.h"
+  
+LedControl lc=LedControl(12,10,11,1);
 
+unsigned long delaytime1=1000;
+unsigned long delaytime2=5000;
+void setup() {
+ 
+  lc.shutdown(0,false);
+  /* Set the brightness to a medium values */
+  lc.setIntensity(0,1);
+  /* and clear the display */
+  lc.clearDisplay(0);
+
+}
 
 /*
  This method will count down from 10 to 1 then display a heart. Byte letters refer to digits, Byte z is the heart
