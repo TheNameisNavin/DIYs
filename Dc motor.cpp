@@ -1,3 +1,5 @@
+
+
 void setup()
 {
   pinMode(8, OUTPUT);
@@ -15,7 +17,4 @@ void loop()
   digitalWrite(7, LOW);
   delay(5000); // Wait for 5000 millisecond(s)
 }
-
-
-
 
