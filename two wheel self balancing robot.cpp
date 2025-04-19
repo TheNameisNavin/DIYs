@@ -1,8 +1,8 @@
 #include "I2Cdev.h"
-#include <PID_v1.h> //From https://github.com/br3ttb/Arduino-PID-Library/blob/master/PID_v1.h
-#include "MPU6050_6Axis_MotionApps20.h" //https://github.com/jrowberg/i2cdevlib/tree/master/Arduino/MPU6050
+#include <PID_v1.h> 
+#include "MPU6050_6Axis_MotionApps20.h" 
 MPU6050 mpu;
-// MPU control/status vars
+
 bool dmpReady = false;  // set true if DMP init was successful
 uint8_t mpuIntStatus;   // holds actual interrupt status byte from MPU
 uint8_t devStatus;      // return status after each device operation (0 = success, !0 = error)
