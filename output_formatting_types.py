@@ -1,13 +1,28 @@
+#using normal method
+
+Syntax: 
+a=input()
+b=input()
+print("the value is", a ,b)
+
+I/P: 
+10
+20
+
+O/P: 
+the value is 10 20
 
 #usinf string modulo operator
-Example:
-I/P:
-x=10
-y=20
+Syntax:
+x=input()
+y=input()`
 print("the values are %d%d" % (x,y))
 
-O/P:
+I/P:
+10
+20
 
+O/P:
 the values are 1020
 
 
@@ -21,15 +36,15 @@ x = 10
 y = 20
 print(f'the values are {x}{y})
 
-O/p:  "the values are 1020"
+O/P:
+the values are 1020
 
 
 #using dot format method
 
-eXAMPLE:
+Example:
 
-i/p:
-
+I/P:
 a = 2.4567
 b= 20
 print(" the values are {:.4f} and {}".format(a,b))
