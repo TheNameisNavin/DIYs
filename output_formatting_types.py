@@ -25,3 +25,13 @@ O/p:  "the values are 1020"
 
 
 #using dot format method
+
+eXAMPLE:
+
+i/p:
+
+a = 2.4567
+b= 20
+print(" the values are {:.4f} and {}".format(a,b))
+
+O/P:  the values are 2.4567 and 20
