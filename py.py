@@ -66,3 +66,18 @@ for i in range(1,11):
 Problem: Write a program to check if a number is prime using a for loop. ● Input: An integer N 
 ● Output: "Prime" if the number is prime, "Not Prime" otherwise. 
 '''
+n = int(input("n:"))
+is_prime = True
+
+if (n < 2):
+    is_prime = False
+else:
+    for i in range( 2, int(n** 0.5 )+ 1):
+        if n%i == 0:
+           is_prime = False
+           break
+
+if is_prime:
+    print("Prime")
+else:
+    print("Not Prime")
