@@ -81,3 +81,42 @@ if is_prime:
     print("Prime")
 else:
     print("Not Prime")
+
+'''
+8. Sum of Digits of a Number (Using while loop) 
+Problem: Write a program to find the sum of digits of a number using a while loop. ● Input: An integer n 
+● Output: Sum of the digits of n. 
+'''
+
+n = int(input("n:"))
+sum = 0
+while n > 0:
+    sum += n%10
+    n //= 10
+print(sum)
+
+'''
+9. Print Fibonacci Sequence un= p to N Terms (Using for loop) Problem: Write a program to print the Fibonacci sequence up to N terms using a for loop.
+● Input: An integer N 
+● Output: Fibonacci sequence up to N terms. 
+'''
+
+n = int(input("n:"))
+a,b =0,1
+for i in range(n):
+    print(a, end="")
+    a,b = b, a+b
+
+'''
+10. Count Numbers Divisible by 3 (Using for loop) 
+Problem: Write a program to count how many numbers between 1 and N are divisible by 3 using a for loop. 
+● Input: An integer N 
+● Output: Count of numbers divisible by 3. 
+'''
+
+n = int(input("n:"))
+count=0
+for i in range(1,n+1):
+    if i%3==0:
+        count = count + 1
+print(count)
