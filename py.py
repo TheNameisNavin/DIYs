@@ -283,8 +283,19 @@ for i in range(1, n+1):
     if (i%15 ==0):
         print(i)
 
+'''
+20. Find GCD of Two Numbers (Using while loop) 
+Problem: Write a program to find the GCD of two numbers using a while loop. 
+● Input: Two integers a and b 
+● Output: GCD of a and b. 
+nnnnnnn 
+'''
 
 
+a, b = map(int, input().split())
+while b:
+    a, b = b, a % b
+print(a)
 
 
 
