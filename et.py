@@ -2,7 +2,7 @@
 #Nested loops [ 27.5.25 ]
 
 a=0
-for i in rnage(2):
+for i in range(2):
   for i in range(1,4):
     print(a,end="")
   print()
