@@ -237,10 +237,102 @@ for i in range(n):
             print(f"{j+1}",end= " ")
     print()
 '''
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+'
+ATM
+Pooja would like to withdraw X US Dollar from an ATM. The cash machine will only accept the transaction if X is a multiple of 5, and Pooja's account balance has enough cash to perform the withdrawal transaction (including bank charges). For each successful withdrawal the bank charges 0.50 US Dollar.
 
+Calculate Pooja's account balance after an attempted transaction.
 
+Input Format
+Each input contains 2 numbers 
+X and Y.
+X is the amount of cash which Pooja wishes to withdraw.
+Y is Pooja's initial account balance.
 
+Output Format
+Output the account balance after the attempted transaction, given as a number with two digits of precision. If there is not enough money in the account to complete the transaction, output the current bank balance.
 
+Constraints
+0<X≤2000 - the amount of cash which Pooja wishes to withdraw.
+
+0≤Y≤2000 with two digits of precision - Pooja's initial account balance.
+'''
+
+Code: 
+
+# cook your dish here
+x,y = map(float,input().split())
+if x%5 == 0 and y >= (x+0.5):
+    y=y-(x+0.50)
+    print(y)
+else:
+    print(y)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+'''
+Sum OR Difference
+Write a program to take two numbers as input and print their difference if the first number is greater than the second number 
+
+otherwise print their sum.
+
+Input Format
+First line will contain two numbers, 
+
+(N1) and (N2), separated by a space.
+
+Output Format
+Output a single line containing the difference of 2 numbers 
+(N1−N2) if the first number is greater than the second number otherwise output their sum 
+(N1+N2).
+
+Constraints
+
+−1000≤N1≤1000
+
+−1000≤N2≤1000
+'''
+
+Code:
+# cook your dish here
+x, y=map(int,input().split())
+if x>y:
+    print(x-y)
+else:
+    print(x+y)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+'''
+Volume Control
+Chef is watching TV. The current volume of the TV is X. Pressing the volume up button of the TV remote increases the volume by 
+1 while pressing the volume down button decreases the volume by 1. Chef wants to change the volume from X to Y. Find the minimum number of button presses required to do so.
+
+Input Format
+The first line contains a single integer 
+T - the number of test cases. Then the test cases follow.
+The first and only line of each test case contains two integers 
+X and Y - the initial volume and final volume of the TV.
+
+Output Format
+For each test case, output the minimum number of times Chef has to press a button to change the volume from X to Y.
+
+Constraints
+
+1≤T≤100
+1≤X,Y≤100
+'''
+Code:
+
+# cook your dish here
+t=int(input())
+for _ in range(t):
+    x,y= map(int,input().split())
+    if x>y:
+        print(x-y)
+    else:
+        print(y-x)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
