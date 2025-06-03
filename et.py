@@ -432,3 +432,37 @@ for _ in range(t):
     x= int(input())
     y = 2*x
     print(y)
+
+-----------------------------------------------------------------------------
+'''
+Nonnegative integer is given. Is it divisible by 2, by 4 and by 8.
+
+Input
+One nonnegative integer, that contains no more than 100 digits.
+
+Output
+Print in the first line Yes if the number is divisible by 2, otherwise print No.
+
+Print in the second line Yes if the number is divisible by 4, otherwise print No.
+
+Print in the third line Yes if the number is divisible by 8, otherwise print No.
+'''
+
+Code: 
+
+n = int(input())
+if(n%2==0):
+    print("Yes")
+else:
+        print("No")
+if(n%4 ==0):
+    print("Yes")
+else:
+    print("No")
+if(n%8==0):
+    print("Yes")
+else:
+    print("No")
+
+---------------------------------------------------------------------------------------------------------
+
